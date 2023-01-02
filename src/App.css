@@ -36,3 +36,202 @@
     transform: rotate(360deg);
   }
 }
+
+
+.form-control {
+  border-radius: 3px;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  z-index: 10;
+  right: 59%;
+  top: 20px;
+  color: blue;
+}
+
+.item{
+  display: block;
+  width: 400px;
+  padding: 10px;
+}
+
+.items{
+  display: contents;
+}
+
+.card{
+  padding: 10px;
+
+}
+
+.items .item img{
+height: 230px;
+width: 250px;
+}
+.row{
+  margin-right: none !important;
+  margin-left: none !important;
+}
+
+
+.card {
+  height: 71vh;
+  margin: 25px;
+  padding: 25px;
+}
+
+.admin-page .card{
+  height: 71vh;
+  margin: 25px;
+  width: 580px;
+  padding: 25px;
+}
+
+.center img {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  height: 162px;
+  width: 250px;
+  margin: 20px 0px;
+}
+
+h4,
+h6 {
+  font-weight: 400;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+.center .btn {
+  font-size: 14px !important;
+  margin-top: 20px !important;
+  font-weight: 400;
+  padding: 12px 72px;
+  border-radius: 3px !important;
+}
+
+#HeadC{
+  color: blueviolet;
+  font-weight: bold;
+}
+
+#NameC{
+  color: green;
+  font-weight: bold;
+}
+
+#DisC{
+  color: red;
+  font-weight: bold;
+}
+
+.modal{
+  display: block;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.ant-modal{
+  width: 680px !important;
+}
+
+.paging-nav {
+  text-align: right;
+  padding-top: 2px;
+}
+
+.paging-nav a {
+  margin: auto 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 7px;
+  background: #91b9e6;
+  color: white;
+  border-radius: 3px;
+}
+
+.paging-nav .selected-page {
+  background: #187ed5;
+  font-weight: bold;
+}
+
+.ant-card{
+  display: block;
+  width: 400px;
+  margin:100px auto 0px auto;
+  background: radial-gradient(aqua,pink);
+}
+
+.avtarImg{
+  padding-bottom: 15px;
+}
+
+.avtarImg img svg{
+  vertical-align: start !important;
+}
+
+.ant-table-content{
+  padding: 20px;
+}
+
+
+.coupenForm .ant-card{
+  display: block;
+  width: 400px;
+  margin:80px auto 0px auto;
+  background: radial-gradient(aqua,pink);
+}

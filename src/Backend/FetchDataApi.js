@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const FetchDataApi = ({ setCoupens, isChange, url }) => {
   useEffect(() => {
-    fetch(`https://ecommerce_coupens_api.onrender.com/coupens`, {
+    fetch(`https://ecommerce_coupens_api.onrender.com/api/v1/coupens`, {
       mode: "cors",
       headers: {
         Accept: "application/json",

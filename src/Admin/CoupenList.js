@@ -100,6 +100,7 @@ const CoupenList = ({
       mode: "cors",
       headers: {
         Authorization: `Bearer ${token}`,
+        "Access-Control-Allow-Origin": "*",
       },
     })
       .then((response) => response.json())

@@ -70,6 +70,7 @@ const NewCoupen = ({ setIsChange, isChange, token, url }) => {
       headers: {
         "content-type": "application/json",
         Authorization: `Bearer ${token}`,
+        "Access-Control-Allow-Origin": "*",
       },
     })
       .then((response) => response.json())

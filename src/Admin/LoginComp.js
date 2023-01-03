@@ -24,6 +24,7 @@ const LoginComp = ({ setUser, setIsLogin, setToken, url }) => {
       mode: "cors",
       headers: {
         "content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     })
       .then((response) => response.json())

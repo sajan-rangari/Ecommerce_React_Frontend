@@ -79,7 +79,7 @@ const EditCoupen = ({ editCoupen, isChange, setIsChange, token, url }) => {
       expiryDate: expiryDate,
     };
 
-    fetch(`${url}/api/v1/coupens/${coupenId.id}`, {
+    fetch(`${url}/coupens/${coupenId.id}`, {
       method: "PUT",
       body: JSON.stringify(coupen),
       mode: "cors",

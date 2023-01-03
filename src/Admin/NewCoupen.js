@@ -63,7 +63,7 @@ const NewCoupen = ({ setIsChange, isChange, token, url }) => {
       expiryDate: expiryDate,
       createdAt: Date.now(),
     };
-    fetch(`${url}/api/v1/coupens`, {
+    fetch(`${url}/coupens`, {
       method: "POST",
       body: JSON.stringify(coupen),
       mode: "cors",

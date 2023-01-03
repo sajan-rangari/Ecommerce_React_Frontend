@@ -95,7 +95,7 @@ const CoupenList = ({
     },
   ];
   const onDeleteCoupen = (coupen) => {
-    fetch(`${url}/api/v1/coupens/${coupen._id}`, {
+    fetch(`${url}/coupens/${coupen._id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {

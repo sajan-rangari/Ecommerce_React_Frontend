@@ -18,7 +18,7 @@ const LoginComp = ({ setUser, setIsLogin, setToken, url }) => {
       passwordHash: password,
     };
     setUser(user);
-    fetch(`${url}/api/v1/admins/login`, {
+    fetch(`${url}/admins/login`, {
       method: "POST",
       body: JSON.stringify(user),
       mode: "cors",

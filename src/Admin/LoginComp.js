@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
-const LoginComp = ({ setUser, setIsLogin, setToken }) => {
+const LoginComp = ({ setUser, setIsLogin, setToken, url }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ const LoginComp = ({ setUser, setIsLogin, setToken }) => {
       passwordHash: password,
     };
     setUser(user);
-    fetch("http://localhost:3500/api/v1/admins/login", {
+    fetch(`${url}/api/v1/admins/login`, {
       method: "POST",
       body: JSON.stringify(user),
       mode: "cors",

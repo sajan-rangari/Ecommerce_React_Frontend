@@ -21,6 +21,7 @@ const CoupenList = ({
   setIsChange,
   isChange,
   token,
+  url,
 }) => {
   const navigate = useNavigate();
   const [api, contextHolder] = notification.useNotification();
@@ -94,7 +95,7 @@ const CoupenList = ({
     },
   ];
   const onDeleteCoupen = (coupen) => {
-    fetch(`http://localhost:3500/api/v1/coupens/${coupen._id}`, {
+    fetch(`${url}/api/v1/coupens/${coupen._id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {

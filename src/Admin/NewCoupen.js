@@ -6,7 +6,7 @@ import { notification } from "antd";
 const Context = React.createContext({
   name: "Default",
 });
-const NewCoupen = ({ setIsChange, isChange, token }) => {
+const NewCoupen = ({ setIsChange, isChange, token, url }) => {
   const [coupenName, setCoupenName] = useState("");
   const [discountType, setDiscountType] = useState("");
   const [discountValue, setDiscountValue] = useState(0);
@@ -63,7 +63,7 @@ const NewCoupen = ({ setIsChange, isChange, token }) => {
       expiryDate: expiryDate,
       createdAt: Date.now(),
     };
-    fetch("http://localhost:3500/api/v1/coupens", {
+    fetch(`${url}/api/v1/coupens`, {
       method: "POST",
       body: JSON.stringify(coupen),
       mode: "cors",

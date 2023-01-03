@@ -6,7 +6,7 @@ import { notification } from "antd";
 const Context = React.createContext({
   name: "Default",
 });
-const EditCoupen = ({ editCoupen, isChange, setIsChange, token }) => {
+const EditCoupen = ({ editCoupen, isChange, setIsChange, token, url }) => {
   function formatDate(date) {
     var d = new Date(date),
       month = "" + (d.getMonth() + 1),
@@ -79,7 +79,7 @@ const EditCoupen = ({ editCoupen, isChange, setIsChange, token }) => {
       expiryDate: expiryDate,
     };
 
-    fetch(`http://localhost:3500/api/v1/coupens/${coupenId.id}`, {
+    fetch(`${url}/api/v1/coupens/${coupenId.id}`, {
       method: "PUT",
       body: JSON.stringify(coupen),
       mode: "cors",

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
-const FetchDataApi = ({ setCoupens, isChange }) => {
+const FetchDataApi = ({ setCoupens, isChange, url }) => {
   useEffect(() => {
-    fetch("http://localhost:3500/api/v1/coupens", { mode: "cors" })
+    fetch(`${url}/api/v1/coupens`, { mode: "cors" })
       .then((res) => res.json())
       .then((data) => setCoupens(data));
   }, [isChange]);

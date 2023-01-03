@@ -5,14 +5,7 @@ import { Space, Table, Tag } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faCheckSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
-const CartComp = ({
-  coupens,
-  cart,
-  setCart,
-  setTotalItems,
-  products,
-  setProducts,
-}) => {
+const CartComp = ({ coupens, cart, setCart, setTotalItems }) => {
   const [total, setTotal] = useState(0);
   const [appliedCoupen, setAppliedCoupen] = useState({});
   const [disabled, setDisabled] = useState(true);

@@ -11,6 +11,7 @@ import Header from "./front/components/Header";
 import Products from "./front/components/Products";
 
 function App() {
+  const url = "https://ecommerce_coupens_api.onrender.com";
   const [search, setSearch] = useState("");
   const [coupens, setCoupens] = useState([]);
   const [cart, setCart] = useState([]);
@@ -34,6 +35,7 @@ function App() {
         user={user}
         coupens={coupens}
         isChange={isChange}
+        url={url}
       />
       {/* <FetchApi search={search} /> */}
       <Routes>
@@ -66,6 +68,7 @@ function App() {
               setUser={setUser}
               setIsLogin={setIsLogin}
               setToken={setToken}
+              url={url}
             />
           }
         />
@@ -80,6 +83,7 @@ function App() {
               setIsChange={setIsChange}
               isChange={isChange}
               token={token}
+              url={url}
             />
           }
         />
@@ -92,6 +96,7 @@ function App() {
               setIsChange={setIsChange}
               isChange={isChange}
               token={token}
+              url={url}
             />
           }
         />
@@ -105,6 +110,7 @@ function App() {
               isChange={isChange}
               setIsChange={setIsChange}
               token={token}
+              url={url}
             />
           }
         />

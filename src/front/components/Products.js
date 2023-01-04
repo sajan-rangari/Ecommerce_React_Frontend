@@ -26,7 +26,7 @@ const Products = ({ search, setCart, cart, setTotalItems }) => {
 
     setTimeout(() => {
       (async () => await fetchItems())();
-    }, 2000);
+    });
   }, [search, cart]);
 
   const onFilter = (s) => {
@@ -65,6 +65,10 @@ const Products = ({ search, setCart, cart, setTotalItems }) => {
       setTotalItems(cartData.length);
     }
     console.log(cart);
+  };
+
+  const hideloader = () => {
+    document.getElementById("loading").style.display = "none";
   };
 
   return (
